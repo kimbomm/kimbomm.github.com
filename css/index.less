@@ -6,7 +6,8 @@ ul,ol{list-style: none;}
 a{text-decoration: none; color:@font-main;}
 img{vertical-align: top;}
 
-@font-main : #000;
+@font-main : #ccc;
+@font-sel : #20bedf;
 .outline(){outline:1px #f00 solid;}
 .fl(){float: left;}
 .fr(){float: right;}
@@ -28,7 +29,14 @@ header{
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+    text-transform: uppercase;
   }
+  li.on{
+    a{
+      color:@font-sel;
+    }
+  }
+
 }
 div[class^="sec"]{
   .outline();
@@ -40,4 +48,19 @@ div[class^="sec"]{
     height: 100%;
     margin: 0 auto;
   }
+}
+.sec_1{
+  background: url("../images/notebook.jpg") no-repeat center;
+}
+.sec_2{
+  background: url("../images/memory.jpg") no-repeat center;
+}
+.sec_3{
+  background: url("../images/apple.jpg") no-repeat center;
+}
+.sec_4{
+  background: url("../images/apple2.jpg") no-repeat center;
+}
+.sec_5{
+  background: url("../images/cloud.jpg") no-repeat center;
 }
