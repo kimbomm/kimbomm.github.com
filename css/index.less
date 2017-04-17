@@ -8,6 +8,7 @@ img{vertical-align: top;}
 
 @font-main : #ccc;
 @font-sel : #20bedf;
+@font-white : #fff;
 .outline(){outline:1px #f00 solid;}
 .fl(){float: left;}
 .fr(){float: right;}
@@ -42,6 +43,7 @@ div[class^="sec"]{
   .outline();
   width: 100%;
   height: 100%;
+  // background-attachment: fixed;
   article{
     .outline();
     width: 1200px;
@@ -51,6 +53,32 @@ div[class^="sec"]{
 }
 .sec_1{
   background: url("../images/notebook.jpg") no-repeat center;
+  article{
+    position: relative;
+    line-height: 1;
+    text-align: center;
+    .intro{
+      .outline();
+      width: 1000px;
+      margin: 0 auto;
+      padding-top: 400px;
+    }
+    h1{
+      .outline();
+      text-transform: uppercase;
+      font-size: 180px;
+      color: @font-white;
+      margin-bottom: 20px;
+    }
+    span{
+      .outline();
+      display: block;
+      text-transform: uppercase;
+      font-size: 40px;
+      color:@font-white;
+
+    }
+  }
 }
 .sec_2{
   background: url("../images/memory.jpg") no-repeat center;
