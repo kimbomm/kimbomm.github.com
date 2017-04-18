@@ -6,6 +6,7 @@ ul,ol{list-style: none;}
 a{text-decoration: none; color:@font-main;}
 img{vertical-align: top;}
 i{text-indent: -9999px;font-style: italic;}
+button{text-indent: -9999px; background: none;}
 
 @font-main : #ccc;
 @font-sub : #2d2c32;
@@ -18,13 +19,11 @@ i{text-indent: -9999px;font-style: italic;}
 .fr(){float: right;}
 
 header{
-  .outline();
   width: 100%;height: 100px;
   position: fixed;
   z-index: 1;
 }
 .nav{
-  .outline();
   width: 1200px;height: 100%;
   margin: 0 auto;
   line-height: 100px;
@@ -43,13 +42,26 @@ header{
   }
 
 }
+.upbtn{
+  position: fixed;
+  right: 50px;bottom:0;
+  margin-bottom: 50px;
+
+  .up{
+    background: url("../images/up.png") no-repeat center;
+    display: block;
+    width: 80px;height: 80px;
+    border: 5px #000 solid;
+    border-radius: 50%;
+    opacity: 0.8;
+    cursor : pointer;
+  }
+}
 div[class^="sec"]{
-  .outline();
   width: 100%;
   height: 100%;
-  // background-attachment: fixed;
+  background-attachment: fixed;
   article{
-    .outline();
     width: 1200px;
     height: 100%;
     margin: 0 auto;
@@ -62,20 +74,17 @@ div[class^="sec"]{
     line-height: 1;
     text-align: center;
     .intro{
-      .outline();
       width: 1000px;
       margin: 0 auto;
       padding-top: 400px;
     }
     h1{
-      .outline();
       text-transform: uppercase;
       font-size: 120px;
       color: @font-white;
-      margin-bottom: 20px;
+      margin-bottom: 60px;
     }
     span{
-      .outline();
       display: block;
       text-transform: uppercase;
       font-size: 40px;
@@ -97,13 +106,11 @@ div[class^="sec"]{
   background: url("../images/cloud.jpg") no-repeat center;
 }
 .cont{
-  .outline();
   width: 1000px;
   margin: 0 auto;
   padding-top: 200px;
   text-align: center;
   span{
-    .outline();
     text-transform: uppercase;
     font-size: 120px;
     color: @font-sub;
@@ -111,11 +118,9 @@ div[class^="sec"]{
   }
 }
 .item{
-  .outline();
   overflow: hidden;
   margin-top: 60px;
   div{
-    .outline();
     width: 33.333333333333%;
     text-align: center;
     .fl();
@@ -133,6 +138,7 @@ div[class^="sec"]{
     color:@font-sub;
     font-weight: bold;
     margin: 30px 0;
+    text-transform: uppercase;
   }
   span{
     display: block;
