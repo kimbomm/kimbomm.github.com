@@ -5,10 +5,14 @@ html,body{height: 100%;}
 ul,ol{list-style: none;}
 a{text-decoration: none; color:@font-main;}
 img{vertical-align: top;}
+i{text-indent: -9999px;font-style: italic;}
 
 @font-main : #ccc;
+@font-sub : #2d2c32;
 @font-sel : #20bedf;
 @font-white : #fff;
+
+
 .outline(){outline:1px #f00 solid;}
 .fl(){float: left;}
 .fr(){float: right;}
@@ -66,7 +70,7 @@ div[class^="sec"]{
     h1{
       .outline();
       text-transform: uppercase;
-      font-size: 180px;
+      font-size: 120px;
       color: @font-white;
       margin-bottom: 20px;
     }
@@ -91,4 +95,60 @@ div[class^="sec"]{
 }
 .sec_5{
   background: url("../images/cloud.jpg") no-repeat center;
+}
+.cont{
+  .outline();
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 200px;
+  text-align: center;
+  span{
+    .outline();
+    text-transform: uppercase;
+    font-size: 120px;
+    color: @font-sub;
+    margin-bottom: 20px;
+  }
+}
+.item{
+  .outline();
+  overflow: hidden;
+  margin-top: 60px;
+  div{
+    .outline();
+    width: 33.333333333333%;
+    text-align: center;
+    .fl();
+  }
+  i{
+    border: 5px #000 solid;
+    display: block;
+    width: 80px;height: 80px;
+    margin: 50px auto;
+    border-radius: 50%;
+  }
+  cite{
+    display:block;
+    font-size: 20px;
+    color:@font-sub;
+    font-weight: bold;
+    margin: 30px 0;
+  }
+  span{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 17px;
+    color: @font-sub;
+  }
+  .address i{
+    background: url("../images/address.png") no-repeat center;
+  }
+  .tel i{
+    background: url("../images/tel.png") no-repeat center;
+  }
+  .mail i{
+    background: url("../images/mail.png") no-repeat center;
+  }
 }
