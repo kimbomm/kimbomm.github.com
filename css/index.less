@@ -50,7 +50,7 @@ header{
   .up{
     background: url("../images/up.png") no-repeat center;
     display: block;
-    width: 80px;height: 80px;
+    width: 50px;height: 50px;
     border: 5px #000 solid;
     border-radius: 50%;
     opacity: 0.8;
@@ -60,21 +60,25 @@ header{
 div[class*="sec"]{
   width: 100%;
   height: 100%;
-  // background-attachment: fixed;
+  background-size: cover;
   article{
     width: 1200px;
     height: 100%;
     margin: 0 auto;
     line-height: 1;
     text-align: center;
+    position: relative;
   }
 }
 .sec_1{
+
   background: url("../images/notebook.jpg") no-repeat center;
   .intro{
     width: 1000px;
-    margin: 0 auto;
-    padding-top: 400px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
   }
   h1{
     text-transform: uppercase;
