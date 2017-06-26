@@ -1,0 +1,291 @@
+html,
+body {
+  height: 100%;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+img {
+  vertical-align: top;
+}
+i {
+  text-indent: -9999px;
+  font-style: italic;
+}
+button {
+  text-indent: -9999px;
+  background: none;
+}
+header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 1;
+}
+.nav {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  line-height: 100px;
+}
+.nav li {
+  float: left;
+  width: 20%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nav li.on a {
+  color: #20bedf;
+}
+.upbtn {
+  position: fixed;
+  right: 50px;
+  bottom: 0;
+  margin-bottom: 50px;
+}
+.upbtn .up {
+  background: url("../images/up.png") no-repeat center;
+  background-size: 100%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 5px #000 solid;
+  border-radius: 50%;
+  opacity: 0.8;
+  cursor: pointer;
+}
+div[class*="sec"] {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+div[class*="sec"] article {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  line-height: 1;
+  text-align: center;
+}
+.sec_1 {
+  background: url("../images/notebook.jpg") no-repeat center;
+}
+.sec_1 article {
+  text-align: center;
+}
+.sec_1 article:before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.sec_1 .intro {
+  width: 1000px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.sec_1 h1 {
+  text-transform: uppercase;
+  font-size: 80px;
+  color: #fff;
+  margin-bottom: 60px;
+}
+.sec_1 span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #fff;
+}
+.sec_2 {
+  background: url("../images/memory.jpg") no-repeat center;
+}
+.sec_2 .career {
+  text-align: left;
+  padding-top: 150px;
+}
+.sec_2 cite {
+  display: block;
+  font-size: 80px;
+  text-transform: uppercase;
+  color: #2d2c32;
+  margin: 0 0 30px 50px;
+}
+.sec_2 p {
+  width: 600px;
+  font-size: 24px;
+  margin: 0 0 30px 30px;
+  color: #ccc;
+  line-height: 1.5;
+}
+.sec_3 {
+  background: url("../images/desktop.jpg") no-repeat center;
+}
+.sec_4 {
+  background: url("../images/apple2.jpg") no-repeat center;
+}
+.sec_5 {
+  background: url("../images/cloud.jpg") no-repeat center;
+}
+.sec_5 .cont {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 30%;
+  text-align: center;
+}
+.sec_5 .cont span {
+  text-transform: uppercase;
+  font-size: 80px;
+  color: #2d2c32;
+  margin-bottom: 20px;
+}
+.sec_5 .item {
+  overflow: hidden;
+  margin-top: 60px;
+}
+.sec_5 .item div {
+  width: 33.333333333333%;
+  text-align: center;
+  float: left;
+}
+.sec_5 .item i {
+  border: 5px #000 solid;
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 50px auto;
+  border-radius: 50%;
+}
+.sec_5 .item cite {
+  display: block;
+  font-size: 20px;
+  color: #2d2c32;
+  font-weight: bold;
+  margin: 30px 0;
+  text-transform: uppercase;
+}
+.sec_5 .item span {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 17px;
+  color: #2d2c32;
+}
+.sec_5 .item .address i {
+  background: url("../images/address.png") no-repeat center;
+}
+.sec_5 .item .tel i {
+  background: url("../images/tel.png") no-repeat center;
+}
+.sec_5 .item .mail i {
+  background: url("../images/mail.png") no-repeat center;
+}
+@media screen and (max-width: 1200px) {
+  .nav {
+    width: 800px;
+  }
+  .nav li {
+    font-size: 18px;
+  }
+  div[class*="sec"] article {
+    width: 800px;
+  }
+  .sec_1 .intro {
+    width: 600px;
+  }
+  .sec_1 h1 {
+    font-size: 48px;
+  }
+  .sec_1 span {
+    font-size: 32px;
+  }
+  .sec_2 .career {
+    padding-top: 70px;
+  }
+  .sec_2 cite {
+    font-size: 48px;
+    margin: 0 0 10px 30px;
+  }
+  .sec_2 p {
+    font-size: 22px;
+    margin: 0 0 20px 20px;
+  }
+  .sec_5 .cont {
+    width: 800px;
+  }
+  .sec_5 .cont span {
+    font-size: 48px;
+  }
+  .sec_5 .item i {
+    border: 1px #000 solid;
+    width: 40px;
+    height: 40px;
+    margin: 30px auto;
+  }
+  .sec_5 .item cite {
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  .sec_5 .item span {
+    font-size: 14px;
+  }
+  .sec_5 .item .address i {
+    background-size: 100%;
+  }
+  .sec_5 .item .tel i {
+    background-size: 100%;
+  }
+  .sec_5 .item .mail i {
+    background-size: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav {
+    width: 100%;
+  }
+  .nav li {
+    font-size: 14px;
+  }
+  div[class*="sec"] article {
+    width: 100%;
+  }
+  .sec_1 .intro {
+    width: 400px;
+  }
+  .sec_1 h1 {
+    font-size: 36px;
+  }
+  .sec_1 span {
+    font-size: 24px;
+  }
+  .sec_2 cite {
+    font-size: 36px;
+  }
+  .sec_2 p {
+    font-size: 18px;
+  }
+  .sec_5 .cont {
+    width: 100%;
+  }
+  .sec_5 .cont span {
+    font-size: 36px;
+  }
+  .sec_5 .item i {
+    border: none;
+  }
+  .upbtn .up {
+    width: 30px;
+    height: 30px;
+    border: 1px #000 solid;
+  }
+}

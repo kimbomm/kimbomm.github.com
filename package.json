@@ -1,0 +1,27 @@
+{
+  "name": "kimbomm.github.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimbomm/kimbomm.github.com.git"
+  },
+  "author": "kimbomm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimbomm/kimbomm.github.com/issues"
+  },
+  "homepage": "https://github.com/kimbomm/kimbomm.github.com#readme",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-serve": "^0.1.6"
+  }
+}
