@@ -36,4 +36,17 @@ $(function(){
     $('html,body').animate({'scrollTop' : sec_idx[0]});
 
   })
+
+  var hamBurger = 0;
+  $('.nav i').click(function(){
+    if(hamBurger == 0){
+      hamBurger = 1;
+      $('.nav img').attr('src','assets/images/menu02.png');
+      $('.nav ul').slideDown();
+    }else if(hamBurger == 1){
+      hamBurger = 0;
+      $('.nav img').attr('src','assets/images/menu01.png');
+      $('.nav ul').slideUp();
+    }
+  })
 })

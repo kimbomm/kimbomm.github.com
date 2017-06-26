@@ -20,11 +20,23 @@ header{
   width: 100%;height: 100px;
   position: fixed;
   z-index: 1;
+  background-color: rgba(0,0,0,.2);
 }
 .nav{
   width: 1200px;height: 100%;
   margin: 0 auto;
   line-height: 100px;
+  i{
+    display: none;
+    width: 32px;height: 32px;
+    position: absolute;
+    top: 24px;right: 40px;
+    cursor: pointer;
+    text-indent: 0px;
+    img{
+      width: 100%;
+    }
+  }
   li{
     .fl();
     width: 20%;
@@ -32,6 +44,11 @@ header{
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
+    &:hover{
+      a{
+        color:font-sel;
+      }
+    }
   }
   li.on{
     a{
@@ -291,6 +308,7 @@ div[class*="sec"]{
     .item{
       i{
         border: none;
+        border-radius: initial;
       }
     }
   }
@@ -298,6 +316,91 @@ div[class*="sec"]{
     .up{
       width: 30px;height: 30px;
       border: 1px #000 solid;
+    }
+  }
+}
+@media screen and (max-width:768px){
+  header{
+    position: fixed;
+    background-color: rgba(0,0,0,.8);
+    height: 80px;
+  }
+  .nav{
+    line-height: 80px;
+  }
+  // div[class*="sec"]{
+  //   height: 500px;
+  // }
+}
+@media screen and (max-width:650px){
+  .nav{
+    i{
+      display: block;
+    }
+    ul{
+      display: none;
+      position: absolute;
+      right: 0;top: 80px;
+      padding: 10px;
+      background-color: rgba(0,0,0,.8);
+    }
+    li{
+      width: 200px;
+      font-size: 18px;
+      padding: 5px 10px;
+      margin: 10px 0;
+      line-height: 30px;
+      text-align: left;
+      float: none;
+      border-bottom: 1px #ccc solid;
+    }
+  }
+  .sec_1{
+    .intro{
+      width: 320px;
+    }
+    h1{
+      font-size: 32px;
+    }
+    span{
+      font-size: 18px;
+    }
+  }
+  .sec_2{
+    cite{
+      font-size: 32px;
+    }
+    p{
+      width: 300px;
+      font-size:  15px;
+    }
+  }
+  .sec_5{
+    .cont{
+      padding-top: 10%;
+      span{
+        font-size: 32px;
+      }
+    }
+    .item{
+      margin-top: 20px;
+      text-align: center;
+      i{
+        margin: 10px auto;
+      }
+      div{
+        margin: 0 auto 20px;
+        display: block;
+        width: 300px;
+        float: none;
+      }
+      span{
+        width: 80%;
+        color: @font-sub;
+      }
+      cite{
+        margin: 10px auto;
+      }
     }
   }
 }

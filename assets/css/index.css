@@ -30,12 +30,26 @@ header {
   height: 100px;
   position: fixed;
   z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .nav {
   width: 1200px;
   height: 100%;
   margin: 0 auto;
   line-height: 100px;
+}
+.nav i {
+  display: none;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 24px;
+  right: 40px;
+  cursor: pointer;
+  text-indent: 0px;
+}
+.nav i img {
+  width: 100%;
 }
 .nav li {
   float: left;
@@ -44,6 +58,9 @@ header {
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
+}
+.nav li:hover a {
+  color: font-sel;
 }
 .nav li.on a {
   color: #20bedf;
@@ -282,10 +299,86 @@ div[class*="sec"] article {
   }
   .sec_5 .item i {
     border: none;
+    border-radius: initial;
   }
   .upbtn .up {
     width: 30px;
     height: 30px;
     border: 1px #000 solid;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 80px;
+  }
+  .nav {
+    line-height: 80px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .nav i {
+    display: block;
+  }
+  .nav ul {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .nav li {
+    width: 200px;
+    font-size: 18px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    line-height: 30px;
+    text-align: left;
+    float: none;
+    border-bottom: 1px #ccc solid;
+  }
+  .sec_1 .intro {
+    width: 320px;
+  }
+  .sec_1 h1 {
+    font-size: 32px;
+  }
+  .sec_1 span {
+    font-size: 18px;
+  }
+  .sec_2 cite {
+    font-size: 32px;
+  }
+  .sec_2 p {
+    width: 300px;
+    font-size: 15px;
+  }
+  .sec_5 .cont {
+    padding-top: 10%;
+  }
+  .sec_5 .cont span {
+    font-size: 32px;
+  }
+  .sec_5 .item {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .sec_5 .item i {
+    margin: 10px auto;
+  }
+  .sec_5 .item div {
+    margin: 0 auto 20px;
+    display: block;
+    width: 300px;
+    float: none;
+  }
+  .sec_5 .item span {
+    width: 80%;
+    color: #2d2c32;
+  }
+  .sec_5 .item cite {
+    margin: 10px auto;
   }
 }
