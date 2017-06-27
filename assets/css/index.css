@@ -59,8 +59,11 @@ header {
   font-weight: bold;
   text-transform: uppercase;
 }
+.nav li a {
+  color: #2d2c32;
+}
 .nav li:hover a {
-  color: font-sel;
+  color: #20bedf;
 }
 .nav li.on a {
   color: #20bedf;

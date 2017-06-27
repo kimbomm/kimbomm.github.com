@@ -71,22 +71,26 @@ header {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 48, assets/less/index.less */
-.nav li:hover a {
-  color: font-sel;
+/* line 47, assets/less/index.less */
+.nav li a {
+  color: #2d2c32;
 }
-/* line 54, assets/less/index.less */
+/* line 51, assets/less/index.less */
+.nav li:hover a {
+  color: #20bedf;
+}
+/* line 57, assets/less/index.less */
 .nav li.on a {
   color: #20bedf;
 }
-/* line 60, assets/less/index.less */
+/* line 63, assets/less/index.less */
 .upbtn {
   position: fixed;
   right: 50px;
   bottom: 0;
   margin-bottom: 50px;
 }
-/* line 65, assets/less/index.less */
+/* line 68, assets/less/index.less */
 .upbtn .up {
   background: url("../images/up.png") no-repeat center;
   background-size: 100%;
@@ -98,13 +102,13 @@ header {
   opacity: 0.8;
   cursor: pointer;
 }
-/* line 76, assets/less/index.less */
+/* line 79, assets/less/index.less */
 div[class*="sec"] {
   width: 100%;
   height: 100%;
   background-size: cover;
 }
-/* line 80, assets/less/index.less */
+/* line 83, assets/less/index.less */
 div[class*="sec"] article {
   width: 1200px;
   height: 100%;
@@ -112,51 +116,51 @@ div[class*="sec"] article {
   line-height: 1;
   text-align: center;
 }
-/* line 88, assets/less/index.less */
+/* line 91, assets/less/index.less */
 .sec_1 {
   background: url("../images/notebook.jpg") no-repeat center;
 }
-/* line 90, assets/less/index.less */
+/* line 93, assets/less/index.less */
 .sec_1 article {
   text-align: center;
 }
-/* line 92, assets/less/index.less */
+/* line 95, assets/less/index.less */
 .sec_1 article:before {
   content: "";
   height: 100%;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 99, assets/less/index.less */
+/* line 102, assets/less/index.less */
 .sec_1 .intro {
   width: 1000px;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 104, assets/less/index.less */
+/* line 107, assets/less/index.less */
 .sec_1 h1 {
   text-transform: uppercase;
   font-size: 80px;
   color: #fff;
   margin-bottom: 60px;
 }
-/* line 110, assets/less/index.less */
+/* line 113, assets/less/index.less */
 .sec_1 span {
   display: block;
   text-transform: uppercase;
   font-size: 40px;
   color: #fff;
 }
-/* line 117, assets/less/index.less */
+/* line 120, assets/less/index.less */
 .sec_2 {
   background: url("../images/memory.jpg") no-repeat center;
 }
-/* line 119, assets/less/index.less */
+/* line 122, assets/less/index.less */
 .sec_2 .career {
   text-align: left;
   padding-top: 150px;
 }
-/* line 123, assets/less/index.less */
+/* line 126, assets/less/index.less */
 .sec_2 cite {
   display: block;
   font-size: 80px;
@@ -164,7 +168,7 @@ div[class*="sec"] article {
   color: #2d2c32;
   margin: 0 0 30px 50px;
 }
-/* line 131, assets/less/index.less */
+/* line 134, assets/less/index.less */
 .sec_2 p {
   width: 600px;
   font-size: 24px;
@@ -172,44 +176,44 @@ div[class*="sec"] article {
   color: #ccc;
   line-height: 1.5;
 }
-/* line 139, assets/less/index.less */
+/* line 142, assets/less/index.less */
 .sec_3 {
   background: url("../images/desktop.jpg") no-repeat center;
 }
-/* line 142, assets/less/index.less */
+/* line 145, assets/less/index.less */
 .sec_4 {
   background: url("../images/apple2.jpg") no-repeat center;
 }
-/* line 145, assets/less/index.less */
+/* line 148, assets/less/index.less */
 .sec_5 {
   background: url("../images/cloud.jpg") no-repeat center;
 }
-/* line 147, assets/less/index.less */
+/* line 150, assets/less/index.less */
 .sec_5 .cont {
   width: 1000px;
   margin: 0 auto;
   padding-top: 30%;
   text-align: center;
 }
-/* line 152, assets/less/index.less */
+/* line 155, assets/less/index.less */
 .sec_5 .cont span {
   text-transform: uppercase;
   font-size: 80px;
   color: #2d2c32;
   margin-bottom: 20px;
 }
-/* line 159, assets/less/index.less */
+/* line 162, assets/less/index.less */
 .sec_5 .item {
   overflow: hidden;
   margin-top: 60px;
 }
-/* line 162, assets/less/index.less */
+/* line 165, assets/less/index.less */
 .sec_5 .item div {
   width: 33.333333333333%;
   text-align: center;
   float: left;
 }
-/* line 167, assets/less/index.less */
+/* line 170, assets/less/index.less */
 .sec_5 .item i {
   border: 5px #000 solid;
   display: block;
@@ -218,7 +222,7 @@ div[class*="sec"] article {
   margin: 50px auto;
   border-radius: 50%;
 }
-/* line 174, assets/less/index.less */
+/* line 177, assets/less/index.less */
 .sec_5 .item cite {
   display: block;
   font-size: 20px;
@@ -227,7 +231,7 @@ div[class*="sec"] article {
   margin: 30px 0;
   text-transform: uppercase;
 }
-/* line 182, assets/less/index.less */
+/* line 185, assets/less/index.less */
 .sec_5 .item span {
   display: block;
   width: 50%;
@@ -236,141 +240,141 @@ div[class*="sec"] article {
   font-size: 17px;
   color: #2d2c32;
 }
-/* line 190, assets/less/index.less */
+/* line 193, assets/less/index.less */
 .sec_5 .item .address i {
   background: url("../images/address.png") no-repeat center;
 }
-/* line 193, assets/less/index.less */
+/* line 196, assets/less/index.less */
 .sec_5 .item .tel i {
   background: url("../images/tel.png") no-repeat center;
 }
-/* line 196, assets/less/index.less */
+/* line 199, assets/less/index.less */
 .sec_5 .item .mail i {
   background: url("../images/mail.png") no-repeat center;
 }
 @media screen and (max-width: 1200px) {
-  /* line 203, assets/less/index.less */
+  /* line 206, assets/less/index.less */
   .nav {
     width: 800px;
   }
-  /* line 205, assets/less/index.less */
+  /* line 208, assets/less/index.less */
   .nav li {
     font-size: 18px;
   }
-  /* line 210, assets/less/index.less */
+  /* line 213, assets/less/index.less */
   div[class*="sec"] article {
     width: 800px;
   }
-  /* line 215, assets/less/index.less */
+  /* line 218, assets/less/index.less */
   .sec_1 .intro {
     width: 600px;
   }
-  /* line 218, assets/less/index.less */
+  /* line 221, assets/less/index.less */
   .sec_1 h1 {
     font-size: 48px;
   }
-  /* line 221, assets/less/index.less */
+  /* line 224, assets/less/index.less */
   .sec_1 span {
     font-size: 32px;
   }
-  /* line 226, assets/less/index.less */
+  /* line 229, assets/less/index.less */
   .sec_2 .career {
     padding-top: 70px;
   }
-  /* line 229, assets/less/index.less */
+  /* line 232, assets/less/index.less */
   .sec_2 cite {
     font-size: 48px;
     margin: 0 0 10px 30px;
   }
-  /* line 233, assets/less/index.less */
+  /* line 236, assets/less/index.less */
   .sec_2 p {
     font-size: 22px;
     margin: 0 0 20px 20px;
   }
-  /* line 239, assets/less/index.less */
+  /* line 242, assets/less/index.less */
   .sec_5 .cont {
     width: 800px;
   }
-  /* line 241, assets/less/index.less */
+  /* line 244, assets/less/index.less */
   .sec_5 .cont span {
     font-size: 48px;
   }
-  /* line 246, assets/less/index.less */
+  /* line 249, assets/less/index.less */
   .sec_5 .item i {
     border: 1px #000 solid;
     width: 40px;
     height: 40px;
     margin: 30px auto;
   }
-  /* line 251, assets/less/index.less */
+  /* line 254, assets/less/index.less */
   .sec_5 .item cite {
     font-size: 16px;
     margin: 20px 0;
   }
-  /* line 255, assets/less/index.less */
+  /* line 258, assets/less/index.less */
   .sec_5 .item span {
     font-size: 14px;
   }
-  /* line 258, assets/less/index.less */
+  /* line 261, assets/less/index.less */
   .sec_5 .item .address i {
     background-size: 100%;
   }
-  /* line 261, assets/less/index.less */
+  /* line 264, assets/less/index.less */
   .sec_5 .item .tel i {
     background-size: 100%;
   }
-  /* line 264, assets/less/index.less */
+  /* line 267, assets/less/index.less */
   .sec_5 .item .mail i {
     background-size: 100%;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 271, assets/less/index.less */
+  /* line 274, assets/less/index.less */
   .nav {
     width: 100%;
   }
-  /* line 273, assets/less/index.less */
+  /* line 276, assets/less/index.less */
   .nav li {
     font-size: 14px;
   }
-  /* line 278, assets/less/index.less */
+  /* line 281, assets/less/index.less */
   div[class*="sec"] article {
     width: 100%;
   }
-  /* line 283, assets/less/index.less */
+  /* line 286, assets/less/index.less */
   .sec_1 .intro {
     width: 400px;
   }
-  /* line 286, assets/less/index.less */
+  /* line 289, assets/less/index.less */
   .sec_1 h1 {
     font-size: 36px;
   }
-  /* line 289, assets/less/index.less */
+  /* line 292, assets/less/index.less */
   .sec_1 span {
     font-size: 24px;
   }
-  /* line 294, assets/less/index.less */
+  /* line 297, assets/less/index.less */
   .sec_2 cite {
     font-size: 36px;
   }
-  /* line 297, assets/less/index.less */
+  /* line 300, assets/less/index.less */
   .sec_2 p {
     font-size: 18px;
   }
-  /* line 302, assets/less/index.less */
+  /* line 305, assets/less/index.less */
   .sec_5 .cont {
     width: 100%;
   }
-  /* line 304, assets/less/index.less */
+  /* line 307, assets/less/index.less */
   .sec_5 .cont span {
     font-size: 36px;
   }
-  /* line 309, assets/less/index.less */
+  /* line 312, assets/less/index.less */
   .sec_5 .item i {
     border: none;
     border-radius: initial;
   }
-  /* line 316, assets/less/index.less */
+  /* line 319, assets/less/index.less */
   .upbtn .up {
     width: 30px;
     height: 30px;
@@ -378,23 +382,23 @@ div[class*="sec"] article {
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 323, assets/less/index.less */
+  /* line 326, assets/less/index.less */
   header {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.8);
     height: 80px;
   }
-  /* line 328, assets/less/index.less */
+  /* line 331, assets/less/index.less */
   .nav {
     line-height: 80px;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 337, assets/less/index.less */
+  /* line 340, assets/less/index.less */
   .nav i {
     display: block;
   }
-  /* line 340, assets/less/index.less */
+  /* line 343, assets/less/index.less */
   .nav ul {
     display: none;
     position: absolute;
@@ -403,7 +407,7 @@ div[class*="sec"] article {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
   }
-  /* line 347, assets/less/index.less */
+  /* line 350, assets/less/index.less */
   .nav li {
     width: 200px;
     font-size: 18px;
@@ -414,57 +418,57 @@ div[class*="sec"] article {
     float: none;
     border-bottom: 1px #ccc solid;
   }
-  /* line 359, assets/less/index.less */
+  /* line 362, assets/less/index.less */
   .sec_1 .intro {
     width: 320px;
   }
-  /* line 362, assets/less/index.less */
+  /* line 365, assets/less/index.less */
   .sec_1 h1 {
     font-size: 32px;
   }
-  /* line 365, assets/less/index.less */
+  /* line 368, assets/less/index.less */
   .sec_1 span {
     font-size: 18px;
   }
-  /* line 370, assets/less/index.less */
+  /* line 373, assets/less/index.less */
   .sec_2 cite {
     font-size: 32px;
   }
-  /* line 373, assets/less/index.less */
+  /* line 376, assets/less/index.less */
   .sec_2 p {
     width: 300px;
     font-size: 15px;
   }
-  /* line 379, assets/less/index.less */
+  /* line 382, assets/less/index.less */
   .sec_5 .cont {
     padding-top: 10%;
   }
-  /* line 381, assets/less/index.less */
+  /* line 384, assets/less/index.less */
   .sec_5 .cont span {
     font-size: 32px;
   }
-  /* line 385, assets/less/index.less */
+  /* line 388, assets/less/index.less */
   .sec_5 .item {
     margin-top: 20px;
     text-align: center;
   }
-  /* line 388, assets/less/index.less */
+  /* line 391, assets/less/index.less */
   .sec_5 .item i {
     margin: 10px auto;
   }
-  /* line 391, assets/less/index.less */
+  /* line 394, assets/less/index.less */
   .sec_5 .item div {
     margin: 0 auto 20px;
     display: block;
     width: 300px;
     float: none;
   }
-  /* line 397, assets/less/index.less */
+  /* line 400, assets/less/index.less */
   .sec_5 .item span {
     width: 80%;
     color: #2d2c32;
   }
-  /* line 401, assets/less/index.less */
+  /* line 404, assets/less/index.less */
   .sec_5 .item cite {
     margin: 10px auto;
   }
