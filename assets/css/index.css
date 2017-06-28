@@ -60,7 +60,7 @@ header {
   text-transform: uppercase;
 }
 .nav li a {
-  color: #2d2c32;
+  color: #fff;
 }
 .nav li:hover a {
   color: #20bedf;
@@ -319,6 +319,38 @@ div.sec_3 .portWrap .skill span {
     font-size: 22px;
     margin: 0 0 20px 20px;
   }
+  div.sec_3 .textWrap {
+    width: 800px;
+  }
+  div.sec_3 .textWrap h3 {
+    font-size: 48px;
+  }
+  div.sec_3 .textWrap span {
+    min-width: 100px;
+    height: 4px;
+  }
+  div.sec_3 .portWrap {
+    width: 800px;
+  }
+  div.sec_3 .portWrap > div {
+    height: 350px;
+  }
+  div.sec_3 .portWrap .imgWrap {
+    width: 450px;
+    height: 300px;
+  }
+  div.sec_3 .portWrap .thisInfo {
+    width: 350px;
+    height: 300px;
+  }
+  div.sec_3 .portWrap .title span {
+    font-size: 28px;
+  }
+  div.sec_3 .portWrap .skill {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
   .sec_5 .cont {
     width: 800px;
   }
@@ -373,6 +405,51 @@ div.sec_3 .portWrap .skill span {
   .sec_2 p {
     font-size: 18px;
   }
+  div.sec_3 .textWrap {
+    width: 100%;
+  }
+  div.sec_3 .textWrap h3 {
+    font-size: 36px;
+  }
+  div.sec_3 .textWrap span {
+    min-width: 100px;
+    height: 4px;
+  }
+  div.sec_3 .portWrap {
+    margin-top: 20px;
+    width: 450px;
+  }
+  div.sec_3 .portWrap > div {
+    height: 500px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px #ccc solid;
+  }
+  div.sec_3 .portWrap .imgWrap {
+    width: 450px;
+    height: 300px;
+  }
+  div.sec_3 .portWrap .thisInfo {
+    top: 310px;
+    right: 50px;
+    width: 350px;
+    height: 200px;
+  }
+  div.sec_3 .portWrap .info {
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+  }
+  div.sec_3 .portWrap .title span {
+    font-size: 24px;
+  }
+  div.sec_3 .portWrap .content {
+    margin: 10px 0 0 5px;
+  }
+  div.sec_3 .portWrap .content p {
+    font-size: 14px;
+  }
   .sec_5 .cont {
     width: 100%;
   }
@@ -406,19 +483,19 @@ div.sec_3 .portWrap .skill span {
   .nav ul {
     display: none;
     position: absolute;
+    width: 100%;
     right: 0;
     top: 80px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
   }
   .nav li {
-    width: 200px;
+    width: 80%;
     font-size: 18px;
     padding: 5px 10px;
-    margin: 10px 0;
+    margin: 5px auto;
     line-height: 30px;
-    text-align: left;
-    float: none;
+    text-align: center;
+    float: initial;
     border-bottom: 1px #ccc solid;
   }
   .sec_1 .intro {
@@ -462,5 +539,35 @@ div.sec_3 .portWrap .skill span {
   }
   .sec_5 .item cite {
     margin: 10px auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  div.sec_3 .textWrap h3 {
+    font-size: 32px;
+  }
+  div.sec_3 .portWrap {
+    width: 100%;
+  }
+  div.sec_3 .portWrap .imgWrap {
+    width: 100%;
+    height: 250px;
+  }
+  div.sec_3 .portWrap .thisInfo {
+    top: 260px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+  }
+  div.sec_3 .portWrap .title span {
+    font-size: 20px;
+  }
+  div.sec_3 .portWrap .skill {
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+  }
+  div.sec_3 .portWrap .skill span {
+    font-size: 13px;
+    padding: 2px 5px;
   }
 }

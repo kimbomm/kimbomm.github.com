@@ -1,8 +1,22 @@
 $(function(){
 
   var sec_idx = [];
+  var scrWidth = 17;
+  var winWidth = $(window).width() + scrWidth;
   $('.sec_wrap>div').each(function(){
     sec_idx.push($(this).offset().top);
+  })
+
+  $(window).resize(function(){
+    sec_idx = [];
+    $('.sec_wrap>div').each(function(){
+      sec_idx.push($(this).offset().top);
+    });
+    winWidth = $(window).width()+scrWidth;
+
+    if(winWidth > 650){
+      $('.nav ul').css('display','block');
+    }
   })
 
   $(window).scroll(function(){
@@ -29,6 +43,9 @@ $(function(){
     $('body,html').stop().animate({
       'scrollTop' : sec_idx[sel_idx]
     })
+    if(winWidth <= 650){
+      $('.nav i').trigger('click');
+    }
     return false;
   })
 
@@ -42,11 +59,14 @@ $(function(){
     if(hamBurger == 0){
       hamBurger = 1;
       $('.nav img').attr('src','assets/images/menu02.png');
+      $('header').stop().animate({'height': '100%'});
       $('.nav ul').slideDown();
     }else if(hamBurger == 1){
       hamBurger = 0;
       $('.nav img').attr('src','assets/images/menu01.png');
+      $('header').stop().animate({'height': '80px'});
       $('.nav ul').slideUp();
     }
   })
+
 })

@@ -45,7 +45,7 @@ header{
     font-weight: bold;
     text-transform: uppercase;
     a{
-      color:@font-sub;
+      color:@font-white;
     }
     &:hover{
       a{
@@ -310,6 +310,37 @@ div.sec_3{
       margin: 0 0 20px 20px;
     }
   }
+  div.sec_3{
+    .textWrap{
+      width: 800px;
+      h3{
+        font-size: 48px;
+      }
+      span{
+        min-width: 100px;height: 4px;
+      }
+    }
+    .portWrap{
+      width: 800px;
+      >div{
+        height: 350px;
+      }
+      .imgWrap{
+        width: 450px;height: 300px;
+      }
+      .thisInfo{
+        width: 350px;height: 300px;
+      }
+      .title{
+        span{
+          font-size: 28px;
+        }
+      }
+      .skill{
+        left: 10px;right: 10px;bottom: 10px;
+      }
+    }
+  }
   .sec_5{
     .cont{
       width: 800px;
@@ -373,6 +404,48 @@ div.sec_3{
       font-size: 18px;
     }
   }
+  div.sec_3{
+    .textWrap{
+      width: 100%;
+      h3{
+        font-size: 36px;
+      }
+      span{
+        min-width: 100px;height: 4px;
+      }
+    }
+    .portWrap{
+      margin-top: 20px;
+      width: 450px;
+      >div{
+        height: 500px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px @font-main solid;
+      }
+      .imgWrap{
+        width: 450px;height: 300px;
+      }
+      .thisInfo{
+        top: 310px;right: 50px;
+        width: 350px;height: 200px;
+      }
+      .info{
+        top: 5px;bottom: 5px;right: 5px;left: 5px;
+      }
+      .title{
+        span{
+          font-size: 24px;
+        }
+      }
+      .content{
+        margin: 10px 0 0 5px;
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+  }
   .sec_5{
     .cont{
       width: 100%;
@@ -415,18 +488,18 @@ div.sec_3{
     ul{
       display: none;
       position: absolute;
+      width: 100%;
       right: 0;top: 80px;
       padding: 10px;
-      background-color: rgba(0,0,0,.8);
     }
     li{
-      width: 200px;
+      width: 80%;
       font-size: 18px;
       padding: 5px 10px;
-      margin: 10px 0;
+      margin: 5px auto;
       line-height: 30px;
-      text-align: left;
-      float: none;
+      text-align: center;
+      float: initial;
       border-bottom: 1px #ccc solid;
     }
   }
@@ -475,6 +548,37 @@ div.sec_3{
       }
       cite{
         margin: 10px auto;
+      }
+    }
+  }
+}
+@media screen and (max-width:500px){
+  div.sec_3{
+    .textWrap{
+      h3{
+        font-size: 32px;
+      }
+    }
+    .portWrap{
+      width: 100%;
+      .imgWrap{
+        width: 100%;height: 250px;
+      }
+      .thisInfo{
+        top: 260px;right: 20px;left: 20px;
+        width: auto;
+      }
+      .title{
+        span{
+          font-size: 20px;
+        }
+      }
+      .skill{
+        left: 5px;right: 5px;bottom: 5px;
+        span{
+          font-size: 13px;
+          padding: 2px 5px;
+        }
       }
     }
   }
