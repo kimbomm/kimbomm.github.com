@@ -574,7 +574,7 @@ div.sec_3 .portWrap .skill span {
   /* line 471, assets/less/index.less */
   header {
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #000;
     height: 80px;
   }
   /* line 476, assets/less/index.less */

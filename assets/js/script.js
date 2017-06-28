@@ -44,7 +44,6 @@ $(function(){
   })
 
   $('.nav li a').click(function(e){
-    console.log('aaaa');
     var sel_idx = $(this).parent().index();
     $('body,html').stop().animate({
       'scrollTop' : sec_idx[sel_idx]
