@@ -15,6 +15,12 @@ $(function(){
     winWidth = $(window).width()+scrWidth;
 
     if(winWidth > 650){
+      $('header').css('height','80px');
+      $('.nav ul').css('display','block');
+    }else if(winWidth <= 650 && hamBurger == 0){
+      $('.nav ul').css('display','none');
+    }else if(winWidth <= 650 && hamBurger == 1){
+      $('header').css('height','100%');
       $('.nav ul').css('display','block');
     }
   })
