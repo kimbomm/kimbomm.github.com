@@ -76,7 +76,7 @@ $(function(){
     }
   })
 
-  var str = ['Cording is Stamina.','Take your Time.','Be a Digital Nomade.']
+  var str = ['Cording is also Stamina.','Take your Time.','Be a Digital Nomade.']
   function spanMove(start, end, i){
     $('.intro span').stop().animate({
       'top' : end
