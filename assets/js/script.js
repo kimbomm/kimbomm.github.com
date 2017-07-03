@@ -3,18 +3,18 @@ $(function(){
   var sec_idx = [];
   var scrWidth = 17;
   var winWidth = $(window).width() + scrWidth;
-  $('.sec_wrap>div').each(function(){
+  $('.secWrap>div').each(function(){
     sec_idx.push($(this).offset().top);
   })
 
   $(window).resize(function(){
     sec_idx = [];
-    $('.sec_wrap>div').each(function(){
+    $('.secWrap>div').each(function(){
       sec_idx.push($(this).offset().top);
     });
     winWidth = $(window).width()+scrWidth;
 
-    if(winWidth > 650){
+    if((winWidth > 650) && (winWidth <769)){
       $('header').css('height','80px');
       $('.nav ul').css('display','block');
     }else if(winWidth <= 650 && hamBurger == 0){
@@ -22,13 +22,15 @@ $(function(){
     }else if(winWidth <= 650 && hamBurger == 1){
       $('header').css('height','100%');
       $('.nav ul').css('display','block');
+    }else if(winWidth > 768){
+      $('header').css('height','100px');
     }
   })
 
   $(window).scroll(function(){
     var scrW = $(this).scrollTop();
 
-    $('.sec_wrap div').each(function(i){
+    $('.secWrap div').each(function(i){
       var hei = $(this).height() + sec_idx[i];
       if(scrW >= sec_idx[i] && scrW < hei){
         $(this).addClass('on').siblings().removeClass('on');
@@ -74,4 +76,30 @@ $(function(){
     }
   })
 
+  var str = ['Cording is Stamina.','Take your Time.','Be a Digital Nomade.']
+  function spanMove(start, end, i){
+    $('.intro span').stop().animate({
+      'top' : end
+    },function(){
+      $('.intro span').html(str[i]).css('top',start).animate({
+        'top':'0'
+      })
+    })
+  }
+  var spanIdx = 1;
+  var speed = 2500;
+  $('.intro').click(function(){
+    if(spanIdx == str.length){
+      spanIdx = 0;
+      spanMove(50,-50,spanIdx);
+      spanIdx++;
+    }else{
+      spanMove(50,-50,spanIdx);
+      spanIdx ++;
+    }
+  })
+  var spanTri = function(){
+    $('.intro').trigger('click')
+  }
+  var autoMove = setInterval(spanTri,speed);
 })

@@ -65,7 +65,7 @@ header {
 /* line 40, assets/less/index.less */
 .nav li {
   float: left;
-  width: 25%;
+  width: 33.3333333%;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
@@ -103,13 +103,13 @@ header {
   cursor: pointer;
 }
 /* line 79, assets/less/index.less */
-div[class*="sec"] {
+div[class*="sec_"] {
   width: 100%;
-  height: 100%;
+  height: 1000px;
   background-size: cover;
 }
 /* line 83, assets/less/index.less */
-div[class*="sec"] article {
+div[class*="sec_"] article {
   width: 1200px;
   height: 100%;
   margin: 0 auto;
@@ -145,22 +145,28 @@ div[class*="sec"] article {
   margin-bottom: 60px;
 }
 /* line 113, assets/less/index.less */
-.sec_1 span {
-  display: block;
-  text-transform: uppercase;
-  font-size: 40px;
-  color: #fff;
+.sec_1 .slogan {
+  overflow: hidden;
+  height: 50px;
 }
-/* line 120, assets/less/index.less */
+/* line 117, assets/less/index.less */
+.sec_1 span {
+  position: relative;
+  display: block;
+  font-size: 40px;
+  line-height: 1;
+  color: #ccc;
+}
+/* line 125, assets/less/index.less */
 .sec_2 {
   background: url("../images/memory.jpg") no-repeat center;
 }
-/* line 122, assets/less/index.less */
+/* line 127, assets/less/index.less */
 .sec_2 .career {
   text-align: left;
   padding-top: 150px;
 }
-/* line 126, assets/less/index.less */
+/* line 131, assets/less/index.less */
 .sec_2 cite {
   display: block;
   font-size: 80px;
@@ -168,33 +174,33 @@ div[class*="sec"] article {
   color: #2d2c32;
   margin: 0 0 30px 50px;
 }
-/* line 134, assets/less/index.less */
+/* line 139, assets/less/index.less */
 .sec_2 p {
   width: 600px;
   font-size: 24px;
   margin: 0 0 30px 30px;
-  color: #ccc;
+  color: #2d2c32;
   line-height: 1.5;
 }
-/* line 142, assets/less/index.less */
+/* line 147, assets/less/index.less */
 div.sec_3 {
   height: auto;
 }
-/* line 144, assets/less/index.less */
+/* line 149, assets/less/index.less */
 div.sec_3 .textWrap {
   width: 1000px;
   margin: 0 auto;
   padding-top: 10%;
   text-align: center;
 }
-/* line 149, assets/less/index.less */
+/* line 154, assets/less/index.less */
 div.sec_3 .textWrap h3 {
   text-transform: uppercase;
   font-size: 80px;
   color: #2d2c32;
   margin-bottom: 20px;
 }
-/* line 155, assets/less/index.less */
+/* line 160, assets/less/index.less */
 div.sec_3 .textWrap span {
   width: 200px;
   height: 6px;
@@ -202,18 +208,18 @@ div.sec_3 .textWrap span {
   display: block;
   margin: 0 auto;
 }
-/* line 162, assets/less/index.less */
+/* line 167, assets/less/index.less */
 div.sec_3 .portWrap {
   width: 1000px;
   margin: 50px auto 0;
   position: relative;
 }
-/* line 166, assets/less/index.less */
+/* line 171, assets/less/index.less */
 div.sec_3 .portWrap > div {
   position: relative;
   height: 400px;
 }
-/* line 170, assets/less/index.less */
+/* line 175, assets/less/index.less */
 div.sec_3 .portWrap .imgWrap {
   position: absolute;
   left: 0;
@@ -221,13 +227,13 @@ div.sec_3 .portWrap .imgWrap {
   max-width: 500px;
   height: 350px;
 }
-/* line 174, assets/less/index.less */
+/* line 179, assets/less/index.less */
 div.sec_3 .portWrap .imgWrap img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
-/* line 180, assets/less/index.less */
+/* line 185, assets/less/index.less */
 div.sec_3 .portWrap .thisInfo {
   position: absolute;
   top: 0;
@@ -235,7 +241,7 @@ div.sec_3 .portWrap .thisInfo {
   width: 400px;
   height: 350px;
 }
-/* line 185, assets/less/index.less */
+/* line 190, assets/less/index.less */
 div.sec_3 .portWrap .info {
   position: absolute;
   top: 20px;
@@ -243,22 +249,26 @@ div.sec_3 .portWrap .info {
   left: 20px;
   right: 20px;
 }
-/* line 189, assets/less/index.less */
+/* line 194, assets/less/index.less */
 div.sec_3 .portWrap .title {
   text-align: left;
 }
-/* line 191, assets/less/index.less */
+/* line 196, assets/less/index.less */
 div.sec_3 .portWrap .title span {
   font-size: 32px;
   color: #2d2c32;
 }
-/* line 196, assets/less/index.less */
+/* line 201, assets/less/index.less */
 div.sec_3 .portWrap .content {
   text-align: left;
-  margin-top: 15px;
-  margin-left: 15px;
+  padding-top: 25px;
+  padding-left: 10px;
 }
-/* line 201, assets/less/index.less */
+/* line 205, assets/less/index.less */
+div.sec_3 .portWrap .content p {
+  color: #2d2c32;
+}
+/* line 209, assets/less/index.less */
 div.sec_3 .portWrap .skill {
   text-align: left;
   position: absolute;
@@ -266,304 +276,245 @@ div.sec_3 .portWrap .skill {
   right: 20px;
   bottom: 20px;
 }
-/* line 205, assets/less/index.less */
+/* line 213, assets/less/index.less */
 div.sec_3 .portWrap .skill span {
   display: inline-block;
   font-size: 14px;
   line-height: 1;
   padding: 5px 10px;
-  color: #ccc;
-  border: 1px #ccc solid;
+  margin-bottom: 5px;
+  color: #2d2c32;
+  border: 1px #2d2c32 solid;
   border-radius: 5px;
 }
-/* line 217, assets/less/index.less */
-.sec_5 {
-  background: url("../images/cloud.jpg") no-repeat center;
-}
-/* line 219, assets/less/index.less */
-.sec_5 .cont {
-  width: 1000px;
-  margin: 0 auto;
-  padding-top: 30%;
+/* line 226, assets/less/index.less */
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #333;
   text-align: center;
-}
-/* line 224, assets/less/index.less */
-.sec_5 .cont span {
-  text-transform: uppercase;
-  font-size: 80px;
-  color: #2d2c32;
-  margin-bottom: 20px;
 }
 /* line 231, assets/less/index.less */
-.sec_5 .item {
-  overflow: hidden;
-  margin-top: 60px;
+footer:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
 }
-/* line 234, assets/less/index.less */
-.sec_5 .item div {
-  width: 33.333333333333%;
+/* line 237, assets/less/index.less */
+footer .wrap {
+  display: inline-block;
+  vertical-align: middle;
   text-align: center;
-  float: left;
 }
-/* line 239, assets/less/index.less */
-.sec_5 .item i {
-  border: 5px #000 solid;
-  display: block;
-  width: 80px;
-  height: 80px;
-  margin: 50px auto;
-  border-radius: 50%;
-}
-/* line 246, assets/less/index.less */
-.sec_5 .item cite {
-  display: block;
+/* line 241, assets/less/index.less */
+footer .wrap span {
   font-size: 20px;
-  color: #2d2c32;
-  font-weight: bold;
-  margin: 30px 0;
-  text-transform: uppercase;
+  color: #fff;
 }
-/* line 254, assets/less/index.less */
-.sec_5 .item span {
-  display: block;
-  width: 50%;
-  margin: 0 auto;
-  font-weight: bold;
-  font-size: 17px;
-  color: #2d2c32;
-}
-/* line 262, assets/less/index.less */
-.sec_5 .item .address i {
-  background: url("../images/address.png") no-repeat center;
-}
-/* line 265, assets/less/index.less */
-.sec_5 .item .tel i {
-  background: url("../images/tel.png") no-repeat center;
-}
-/* line 268, assets/less/index.less */
-.sec_5 .item .mail i {
-  background: url("../images/mail.png") no-repeat center;
+/* line 245, assets/less/index.less */
+footer .wrap .copy {
+  margin-top: 20px;
 }
 @media screen and (max-width: 1200px) {
-  /* line 275, assets/less/index.less */
+  /* line 253, assets/less/index.less */
   .nav {
     width: 800px;
   }
-  /* line 277, assets/less/index.less */
+  /* line 255, assets/less/index.less */
   .nav li {
     font-size: 18px;
   }
-  /* line 282, assets/less/index.less */
-  div[class*="sec"] article {
+  /* line 259, assets/less/index.less */
+  div[class*="sec_"] {
+    height: 800px;
+  }
+  /* line 261, assets/less/index.less */
+  div[class*="sec_"] article {
     width: 800px;
   }
-  /* line 287, assets/less/index.less */
+  /* line 266, assets/less/index.less */
   .sec_1 .intro {
     width: 600px;
   }
-  /* line 290, assets/less/index.less */
+  /* line 269, assets/less/index.less */
   .sec_1 h1 {
     font-size: 48px;
   }
-  /* line 293, assets/less/index.less */
+  /* line 272, assets/less/index.less */
   .sec_1 span {
     font-size: 32px;
   }
-  /* line 298, assets/less/index.less */
+  /* line 277, assets/less/index.less */
   .sec_2 .career {
     padding-top: 70px;
   }
-  /* line 301, assets/less/index.less */
+  /* line 280, assets/less/index.less */
   .sec_2 cite {
     font-size: 48px;
     margin: 0 0 10px 30px;
   }
-  /* line 305, assets/less/index.less */
+  /* line 284, assets/less/index.less */
   .sec_2 p {
     font-size: 22px;
     margin: 0 0 20px 20px;
   }
-  /* line 311, assets/less/index.less */
+  /* line 289, assets/less/index.less */
+  div.sec_3 {
+    height: 1300px;
+  }
+  /* line 291, assets/less/index.less */
   div.sec_3 .textWrap {
     width: 800px;
   }
-  /* line 313, assets/less/index.less */
+  /* line 293, assets/less/index.less */
   div.sec_3 .textWrap h3 {
     font-size: 48px;
   }
-  /* line 316, assets/less/index.less */
+  /* line 296, assets/less/index.less */
   div.sec_3 .textWrap span {
     min-width: 100px;
     height: 4px;
   }
-  /* line 320, assets/less/index.less */
+  /* line 300, assets/less/index.less */
   div.sec_3 .portWrap {
     width: 800px;
   }
-  /* line 322, assets/less/index.less */
+  /* line 302, assets/less/index.less */
   div.sec_3 .portWrap > div {
     height: 350px;
   }
-  /* line 325, assets/less/index.less */
+  /* line 305, assets/less/index.less */
   div.sec_3 .portWrap .imgWrap {
     width: 450px;
     height: 300px;
   }
-  /* line 328, assets/less/index.less */
+  /* line 308, assets/less/index.less */
   div.sec_3 .portWrap .thisInfo {
     width: 350px;
     height: 300px;
   }
-  /* line 332, assets/less/index.less */
+  /* line 312, assets/less/index.less */
   div.sec_3 .portWrap .title span {
     font-size: 28px;
   }
-  /* line 336, assets/less/index.less */
+  /* line 316, assets/less/index.less */
   div.sec_3 .portWrap .skill {
     left: 10px;
     right: 10px;
     bottom: 10px;
   }
-  /* line 342, assets/less/index.less */
-  .sec_5 .cont {
-    width: 800px;
-  }
-  /* line 344, assets/less/index.less */
-  .sec_5 .cont span {
-    font-size: 48px;
-  }
-  /* line 349, assets/less/index.less */
-  .sec_5 .item i {
-    border: 1px #000 solid;
-    width: 40px;
-    height: 40px;
-    margin: 30px auto;
-  }
-  /* line 354, assets/less/index.less */
-  .sec_5 .item cite {
-    font-size: 16px;
-    margin: 20px 0;
-  }
-  /* line 358, assets/less/index.less */
-  .sec_5 .item span {
-    font-size: 14px;
-  }
-  /* line 361, assets/less/index.less */
-  .sec_5 .item .address i {
-    background-size: 100%;
-  }
-  /* line 364, assets/less/index.less */
-  .sec_5 .item .tel i {
-    background-size: 100%;
-  }
-  /* line 367, assets/less/index.less */
-  .sec_5 .item .mail i {
-    background-size: 100%;
-  }
 }
 @media screen and (max-width: 800px) {
-  /* line 374, assets/less/index.less */
+  /* line 323, assets/less/index.less */
   .nav {
     width: 100%;
   }
-  /* line 376, assets/less/index.less */
+  /* line 325, assets/less/index.less */
   .nav li {
     font-size: 14px;
   }
-  /* line 381, assets/less/index.less */
-  div[class*="sec"] article {
+  /* line 329, assets/less/index.less */
+  div[class*="sec_"] {
+    height: 500px;
+  }
+  /* line 331, assets/less/index.less */
+  div[class*="sec_"] article {
     width: 100%;
   }
-  /* line 386, assets/less/index.less */
+  /* line 336, assets/less/index.less */
   .sec_1 .intro {
     width: 400px;
   }
-  /* line 389, assets/less/index.less */
+  /* line 339, assets/less/index.less */
   .sec_1 h1 {
     font-size: 36px;
+    margin-bottom: 40px;
   }
-  /* line 392, assets/less/index.less */
+  /* line 343, assets/less/index.less */
   .sec_1 span {
     font-size: 24px;
   }
-  /* line 397, assets/less/index.less */
+  /* line 348, assets/less/index.less */
   .sec_2 cite {
     font-size: 36px;
   }
-  /* line 400, assets/less/index.less */
+  /* line 351, assets/less/index.less */
   .sec_2 p {
     font-size: 18px;
   }
-  /* line 405, assets/less/index.less */
+  /* line 355, assets/less/index.less */
+  div.sec_3 {
+    height: 1740px;
+  }
+  /* line 357, assets/less/index.less */
   div.sec_3 .textWrap {
     width: 100%;
   }
-  /* line 407, assets/less/index.less */
+  /* line 359, assets/less/index.less */
   div.sec_3 .textWrap h3 {
     font-size: 36px;
   }
-  /* line 410, assets/less/index.less */
+  /* line 362, assets/less/index.less */
   div.sec_3 .textWrap span {
     min-width: 100px;
     height: 4px;
   }
-  /* line 414, assets/less/index.less */
+  /* line 366, assets/less/index.less */
   div.sec_3 .portWrap {
     margin-top: 20px;
     width: 450px;
   }
-  /* line 417, assets/less/index.less */
+  /* line 369, assets/less/index.less */
   div.sec_3 .portWrap > div {
-    height: 500px;
+    height: 450px;
     padding-bottom: 20px;
     margin-bottom: 20px;
     border-bottom: 1px #ccc solid;
   }
-  /* line 423, assets/less/index.less */
+  /* line 375, assets/less/index.less */
+  div.sec_3 .portWrap > div.league {
+    height: 560px;
+  }
+  /* line 378, assets/less/index.less */
   div.sec_3 .portWrap .imgWrap {
     width: 450px;
     height: 300px;
   }
-  /* line 426, assets/less/index.less */
+  /* line 381, assets/less/index.less */
   div.sec_3 .portWrap .thisInfo {
     top: 310px;
     right: 50px;
     width: 350px;
-    height: 200px;
+    height: 150px;
   }
-  /* line 430, assets/less/index.less */
+  /* line 385, assets/less/index.less */
+  div.sec_3 .portWrap .league .thisInfo {
+    top: 310px;
+    right: 50px;
+    width: 350px;
+    height: 260px;
+  }
+  /* line 389, assets/less/index.less */
   div.sec_3 .portWrap .info {
     top: 5px;
     bottom: 5px;
     right: 5px;
     left: 5px;
   }
-  /* line 434, assets/less/index.less */
+  /* line 393, assets/less/index.less */
   div.sec_3 .portWrap .title span {
     font-size: 24px;
   }
-  /* line 438, assets/less/index.less */
+  /* line 397, assets/less/index.less */
   div.sec_3 .portWrap .content {
-    margin: 10px 0 0 5px;
+    padding: 10px 0 0 5px;
   }
-  /* line 440, assets/less/index.less */
+  /* line 399, assets/less/index.less */
   div.sec_3 .portWrap .content p {
     font-size: 14px;
   }
-  /* line 447, assets/less/index.less */
-  .sec_5 .cont {
-    width: 100%;
-  }
-  /* line 449, assets/less/index.less */
-  .sec_5 .cont span {
-    font-size: 36px;
-  }
-  /* line 454, assets/less/index.less */
-  .sec_5 .item i {
-    border: none;
-    border-radius: initial;
-  }
-  /* line 461, assets/less/index.less */
+  /* line 406, assets/less/index.less */
   .upbtn .up {
     width: 30px;
     height: 30px;
@@ -571,23 +522,23 @@ div.sec_3 .portWrap .skill span {
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 468, assets/less/index.less */
+  /* line 413, assets/less/index.less */
   header {
-    position: fixed;
+    position: relative;
     background-color: #000;
     height: 80px;
   }
-  /* line 473, assets/less/index.less */
+  /* line 418, assets/less/index.less */
   .nav {
     line-height: 80px;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 482, assets/less/index.less */
+  /* line 424, assets/less/index.less */
   .nav i {
     display: block;
   }
-  /* line 485, assets/less/index.less */
+  /* line 427, assets/less/index.less */
   .nav ul {
     display: none;
     position: absolute;
@@ -596,7 +547,7 @@ div.sec_3 .portWrap .skill span {
     top: 80px;
     padding: 10px;
   }
-  /* line 492, assets/less/index.less */
+  /* line 434, assets/less/index.less */
   .nav li {
     width: 80%;
     font-size: 18px;
@@ -607,95 +558,103 @@ div.sec_3 .portWrap .skill span {
     float: initial;
     border-bottom: 1px #ccc solid;
   }
-  /* line 504, assets/less/index.less */
+  /* line 446, assets/less/index.less */
   .sec_1 .intro {
     width: 320px;
   }
-  /* line 507, assets/less/index.less */
+  /* line 449, assets/less/index.less */
   .sec_1 h1 {
     font-size: 32px;
   }
-  /* line 510, assets/less/index.less */
+  /* line 452, assets/less/index.less */
   .sec_1 span {
     font-size: 18px;
   }
-  /* line 515, assets/less/index.less */
+  /* line 457, assets/less/index.less */
   .sec_2 cite {
     font-size: 32px;
   }
-  /* line 518, assets/less/index.less */
+  /* line 460, assets/less/index.less */
   .sec_2 p {
-    width: 300px;
+    width: 450px;
     font-size: 15px;
-  }
-  /* line 524, assets/less/index.less */
-  .sec_5 .cont {
-    padding-top: 10%;
-  }
-  /* line 526, assets/less/index.less */
-  .sec_5 .cont span {
-    font-size: 32px;
-  }
-  /* line 530, assets/less/index.less */
-  .sec_5 .item {
-    margin-top: 20px;
-    text-align: center;
-  }
-  /* line 533, assets/less/index.less */
-  .sec_5 .item i {
-    margin: 10px auto;
-  }
-  /* line 536, assets/less/index.less */
-  .sec_5 .item div {
-    margin: 0 auto 20px;
-    display: block;
-    width: 300px;
-    float: none;
-  }
-  /* line 542, assets/less/index.less */
-  .sec_5 .item span {
-    width: 80%;
-    color: #2d2c32;
-  }
-  /* line 546, assets/less/index.less */
-  .sec_5 .item cite {
-    margin: 10px auto;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 555, assets/less/index.less */
+  /* line 468, assets/less/index.less */
+  .sec_2 .career {
+    padding-top: 30px;
+  }
+  /* line 471, assets/less/index.less */
+  .sec_2 p {
+    width: 320px;
+  }
+  /* line 475, assets/less/index.less */
+  div.sec_3 {
+    height: 1400px;
+  }
+  /* line 478, assets/less/index.less */
   div.sec_3 .textWrap h3 {
     font-size: 32px;
   }
-  /* line 559, assets/less/index.less */
+  /* line 482, assets/less/index.less */
   div.sec_3 .portWrap {
     width: 100%;
   }
-  /* line 561, assets/less/index.less */
+  /* line 484, assets/less/index.less */
+  div.sec_3 .portWrap > div {
+    height: 360px;
+  }
+  /* line 487, assets/less/index.less */
+  div.sec_3 .portWrap > div.league {
+    height: 450px;
+  }
+  /* line 490, assets/less/index.less */
   div.sec_3 .portWrap .imgWrap {
     width: 100%;
     height: 250px;
   }
-  /* line 564, assets/less/index.less */
+  /* line 493, assets/less/index.less */
   div.sec_3 .portWrap .thisInfo {
     top: 260px;
     right: 20px;
     left: 20px;
     width: auto;
+    height: 120px;
   }
-  /* line 569, assets/less/index.less */
+  /* line 497, assets/less/index.less */
+  div.sec_3 .portWrap .league .thisInfo {
+    top: 260px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+    height: 210px;
+  }
+  /* line 502, assets/less/index.less */
   div.sec_3 .portWrap .title span {
     font-size: 20px;
   }
-  /* line 573, assets/less/index.less */
+  /* line 506, assets/less/index.less */
   div.sec_3 .portWrap .skill {
     left: 5px;
     right: 5px;
     bottom: 5px;
   }
-  /* line 575, assets/less/index.less */
+  /* line 508, assets/less/index.less */
   div.sec_3 .portWrap .skill span {
     font-size: 13px;
     padding: 2px 5px;
+  }
+  /* line 515, assets/less/index.less */
+  footer {
+    height: 130px;
+  }
+  /* line 518, assets/less/index.less */
+  footer .wrap span {
+    font-size: 14px;
+  }
+  /* line 521, assets/less/index.less */
+  footer .wrap .copy {
+    margin-top: 10px;
   }
 }

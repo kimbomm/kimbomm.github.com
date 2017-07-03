@@ -39,7 +39,7 @@ header{
   }
   li{
     .fl();
-    width: 25%;
+    width: 33.3333333%;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
@@ -76,9 +76,9 @@ header{
     cursor : pointer;
   }
 }
-div[class*="sec"]{
+div[class*="sec_"]{
   width: 100%;
-  height: 100%;
+  height: 1000px;
   background-size: cover;
   article{
     width: 1200px;
@@ -110,11 +110,16 @@ div[class*="sec"]{
     color: @font-white;
     margin-bottom: 60px;
   }
+  .slogan{
+    overflow: hidden;
+    height: 50px;
+  }
   span{
+    position: relative;
     display: block;
-    text-transform: uppercase;
     font-size: 40px;
-    color:@font-white;
+    line-height: 1;
+    color:@font-main;
   }
 }
 .sec_2{
@@ -135,7 +140,7 @@ div[class*="sec"]{
     width: 600px;
     font-size: 24px;
     margin: 0 0 30px 30px;
-    color: @font-main;
+    color: @font-sub;
     line-height: 1.5;
   }
 }
@@ -195,8 +200,11 @@ div.sec_3{
     }
     .content{
       text-align: left;
-      margin-top: 15px;
-      margin-left: 15px;
+      padding-top: 25px;
+      padding-left: 10px;
+      p{
+        color:@font-sub;
+      }
     }
     .skill{
       text-align: left;
@@ -207,68 +215,38 @@ div.sec_3{
         font-size: 14px;
         line-height: 1;
         padding: 5px 10px;
-        color:@font-main;
-        border: 1px @font-main solid;
+        margin-bottom: 5px;
+        color:@font-sub;
+        border: 1px @font-sub solid;
         border-radius: 5px;
       }
     }
   }
 }
-.sec_5{
-  background: url("../images/cloud.jpg") no-repeat center;
-  .cont{
-    width: 1000px;
-    margin: 0 auto;
-    padding-top: 30%;
+footer{
+  width: 100%;
+  height: 200px;
+  background-color: #333;
+  text-align: center;
+  &:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  .wrap{
+    display: inline-block;
+    vertical-align: middle;
     text-align: center;
     span{
-      text-transform: uppercase;
-      font-size: 80px;
-      color: @font-sub;
-      margin-bottom: 20px;
-    }
-  }
-  .item{
-    overflow: hidden;
-    margin-top: 60px;
-    div{
-      width: 33.333333333333%;
-      text-align: center;
-      .fl();
-    }
-    i{
-      border: 5px #000 solid;
-      display: block;
-      width: 80px;height: 80px;
-      margin: 50px auto;
-      border-radius: 50%;
-    }
-    cite{
-      display:block;
       font-size: 20px;
-      color:@font-sub;
-      font-weight: bold;
-      margin: 30px 0;
-      text-transform: uppercase;
+      color: @font-white;
     }
-    span{
-      display: block;
-      width: 50%;
-      margin: 0 auto;
-      font-weight: bold;
-      font-size: 17px;
-      color: @font-sub;
-    }
-    .address i{
-      background: url("../images/address.png") no-repeat center;
-    }
-    .tel i{
-      background: url("../images/tel.png") no-repeat center;
-    }
-    .mail i{
-      background: url("../images/mail.png") no-repeat center;
+    .copy{
+      margin-top: 20px;
     }
   }
+
 }
 
 @media screen and (max-width:1200px){
@@ -278,7 +256,8 @@ div.sec_3{
       font-size: 18px;
     }
   }
-  div[class*="sec"]{
+  div[class*="sec_"]{
+    height: 800px;
     article{
       width: 800px;
     }
@@ -308,6 +287,7 @@ div.sec_3{
     }
   }
   div.sec_3{
+    height: 1300px;
     .textWrap{
       width: 800px;
       h3{
@@ -338,37 +318,6 @@ div.sec_3{
       }
     }
   }
-  .sec_5{
-    .cont{
-      width: 800px;
-      span{
-        font-size: 48px;
-      }
-    }
-    .item{
-      i{
-        border: 1px #000 solid;
-        width: 40px;height: 40px;
-        margin: 30px auto;
-      }
-      cite{
-        font-size: 16px;
-        margin: 20px 0;
-      }
-      span{
-        font-size: 14px;
-      }
-      .address i{
-        background-size: 100%;
-      }
-      .tel i{
-        background-size: 100%;
-      }
-      .mail i{
-        background-size: 100%;
-      }
-    }
-  }
 }
 @media screen and (max-width:800px){
   .nav{
@@ -377,7 +326,8 @@ div.sec_3{
       font-size: 14px;
     }
   }
-  div[class*="sec"]{
+  div[class*="sec_"]{
+    height: 500px;
     article{
       width: 100%;
     }
@@ -388,6 +338,7 @@ div.sec_3{
     }
     h1{
       font-size: 36px;
+      margin-bottom: 40px;
     }
     span{
       font-size: 24px;
@@ -402,6 +353,7 @@ div.sec_3{
     }
   }
   div.sec_3{
+    height: 1740px;
     .textWrap{
       width: 100%;
       h3{
@@ -415,17 +367,24 @@ div.sec_3{
       margin-top: 20px;
       width: 450px;
       >div{
-        height: 500px;
+        height: 450px;
         padding-bottom: 20px;
         margin-bottom: 20px;
         border-bottom: 1px @font-main solid;
+      }
+      >div.league{
+        height: 560px;
       }
       .imgWrap{
         width: 450px;height: 300px;
       }
       .thisInfo{
         top: 310px;right: 50px;
-        width: 350px;height: 200px;
+        width: 350px;height: 150px;
+      }
+      .league .thisInfo{
+        top: 310px;right: 50px;
+        width: 350px;height: 260px;
       }
       .info{
         top: 5px;bottom: 5px;right: 5px;left: 5px;
@@ -436,24 +395,10 @@ div.sec_3{
         }
       }
       .content{
-        margin: 10px 0 0 5px;
+        padding: 10px 0 0 5px;
         p{
           font-size: 14px;
         }
-      }
-    }
-  }
-  .sec_5{
-    .cont{
-      width: 100%;
-      span{
-        font-size: 36px;
-      }
-    }
-    .item{
-      i{
-        border: none;
-        border-radius: initial;
       }
     }
   }
@@ -466,16 +411,13 @@ div.sec_3{
 }
 @media screen and (max-width:768px){
   header{
-    position: fixed;
+    position: relative;
     background-color: #000;
     height: 80px;
   }
   .nav{
     line-height: 80px;
   }
-  // div[class*="sec"]{
-  //   height: 500px;
-  // }
 }
 @media screen and (max-width:650px){
   .nav{
@@ -516,41 +458,22 @@ div.sec_3{
       font-size: 32px;
     }
     p{
-      width: 300px;
+      width: 450px;
       font-size:  15px;
-    }
-  }
-  .sec_5{
-    .cont{
-      padding-top: 10%;
-      span{
-        font-size: 32px;
-      }
-    }
-    .item{
-      margin-top: 20px;
-      text-align: center;
-      i{
-        margin: 10px auto;
-      }
-      div{
-        margin: 0 auto 20px;
-        display: block;
-        width: 300px;
-        float: none;
-      }
-      span{
-        width: 80%;
-        color: @font-sub;
-      }
-      cite{
-        margin: 10px auto;
-      }
     }
   }
 }
 @media screen and (max-width:500px){
+  .sec_2{
+    .career{
+      padding-top: 30px;
+    }
+    p{
+      width: 320px;
+    }
+  }
   div.sec_3{
+    height: 1400px;
     .textWrap{
       h3{
         font-size: 32px;
@@ -558,12 +481,22 @@ div.sec_3{
     }
     .portWrap{
       width: 100%;
+      >div{
+        height: 360px;
+      }
+      >div.league{
+        height: 450px;
+      }
       .imgWrap{
         width: 100%;height: 250px;
       }
       .thisInfo{
         top: 260px;right: 20px;left: 20px;
-        width: auto;
+        width: auto; height: 120px;
+      }
+      .league .thisInfo{
+        top: 260px;right: 20px;left: 20px;
+        width: auto; height: 210px;
       }
       .title{
         span{
@@ -576,6 +509,17 @@ div.sec_3{
           font-size: 13px;
           padding: 2px 5px;
         }
+      }
+    }
+  }
+  footer{
+    height: 130px;
+    .wrap{
+      span{
+        font-size: 14px;
+      }
+      .copy{
+        margin-top: 10px;
       }
     }
   }
