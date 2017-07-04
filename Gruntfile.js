@@ -14,7 +14,7 @@ module.exports = function(grunt) {
           paths: ['assets/less']
         },
         files: {
-          'assets/css/index.css': 'assets/less/index.less'
+          'assets/css/style.css': 'assets/less/import.less'
         }
       },
       development: {
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
           dumpLineNumbers:"comments"
         },
         files: {
-          'assets/css/dev/index.dev.css': 'assets/less/index.less'
+          'assets/css/dev/style.dev.css': 'assets/less/import.less'
         }
       }
     },

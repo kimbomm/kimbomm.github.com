@@ -1,42 +1,92 @@
-html,body{height: 100%;}
-*{padding: 0;margin: 0;}
-ul,ol{list-style: none;}
-a{text-decoration: none; color:#000;}
-img{vertical-align: top;}
-i{text-indent: -9999px;font-style: italic;}
-button{text-indent: -9999px; background: none;}
-
-
-header{
-  width: 740px;
-  margin: 0 auto;
-  text-align: center;
-  .title{
-    margin-bottom: 30px;
-    h1{
-      padding: 10px 5px;
-      font-size: 40px;
-      line-height: 70px;
-    }
-  }
-  nav{
-    ul{
-      font-size: 0;
-    }
-    li{
-      font-size: 16px;
-      line-height: 36px;
-      text-transform: uppercase;
-      display: inline-block;
-      margin-right: 30px;
-      &:last-child{
-        margin-right: 0;
-      }
-    }
-  }
-}
 .wrap{
   width: 740px;
-  margin: 0 auto;
-  outline:1px #f00 solid;
+  margin: 20px auto 0;
+  p{
+    letter-spacing: 2px;
+    color:#555;
+    line-height: 1.6;
+  }
+  span,a{
+    font-weight: bold;
+  }
+  a{
+    padding: 1px;
+  }
+  .eCtr{
+    color:#00aaaa;
+  }
+  .sCond{
+    color:#800000;
+  }
+  .cLang{
+    color: #ff1868;
+  }
+  .wPub{
+    color:#ff8040;
+  }
+  .fEnd{
+    color:#808000;
+  }
+  .pFolio{
+    background-color: #ff0080;
+    color:#fff;
+    transition: 0.5s;
+    &:hover{
+      background-color: lighten(rgb(255,0,128), 15%);
+    }
+  }
+  .html{
+    color:#e54f27;
+  }
+  .css{
+    color:#2177ff;
+  }
+  .js{
+    color:#a79303;
+  }
+  .git{
+    background-color: #000;
+    color:#fff;
+    transition: 0.5s;
+    &:hover{
+      background-color: lighten(rgb(0,0,0), 15%);
+    }
+  }
+  .rNow{
+    color:#ff2020;
+    text-transform: uppercase;
+  }
+  .officer{
+    color: #004000;
+  }
+  .spain{
+    color:#f00;
+  }
+  .barcelona{
+    background-color: #a40344;
+    color:#fff;
+    transition: 0.5s;
+    &:hover{
+      background-color: lighten(rgb(164,3,68), 15%);
+    }
+  }
+  .valencia{
+    background-color: #fa5619;
+    color:#fff;
+    transition: 0.5s;
+    &:hover{
+      background-color: lighten(rgb(250,86,25), 15%);
+    }
+  }
+  .madrid{
+    background-color: #272d61;
+    color:#fff;
+    transition: 0.5s;
+    &:hover{
+      background-color: lighten(rgb(39,45,97), 15%);
+    }
+  }
+  .arsenal{
+    color:#db0007;
+  }
 }
