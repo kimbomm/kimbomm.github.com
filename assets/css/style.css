@@ -57,12 +57,16 @@ header nav ul {
 header nav li {
   font-size: 16px;
   line-height: 36px;
+  font-weight: bolder;
   text-transform: uppercase;
   display: inline-block;
   margin-right: 30px;
 }
 header nav li:last-child {
   margin-right: 0;
+}
+header nav li:hover a {
+  color: #0099ff;
 }
 .wrap {
   width: 740px;

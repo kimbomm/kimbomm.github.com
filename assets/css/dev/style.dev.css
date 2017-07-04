@@ -70,13 +70,18 @@ header nav ul {
 header nav li {
   font-size: 16px;
   line-height: 36px;
+  font-weight: bolder;
   text-transform: uppercase;
   display: inline-block;
   margin-right: 30px;
 }
-/* line 38, assets\less\header.less */
+/* line 39, assets\less\header.less */
 header nav li:last-child {
   margin-right: 0;
+}
+/* line 43, assets\less\header.less */
+header nav li:hover a {
+  color: #0099ff;
 }
 /* line 1, assets\less\index.less */
 .wrap {
