@@ -183,6 +183,10 @@ header nav li:last-child {
   background-color: #153871;
   color: #f5e04a;
 }
+.work .wTitle .portfolio {
+  background-color: #83e6e8;
+  color: #000;
+}
 .work .wInfo {
   padding: 10px;
   margin-bottom: 30px;
