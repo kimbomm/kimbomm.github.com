@@ -5,12 +5,8 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 * {
-  padding: 0;
   margin: 0;
-}
-ul,
-ol {
-  list-style: none;
+  padding: 0;
 }
 a {
   text-decoration: none;
@@ -75,7 +71,7 @@ header nav li:last-child {
 .wrap p {
   letter-spacing: 2px;
   color: #555;
-  line-height: 1.6;
+  line-height: 30px;
 }
 .wrap span,
 .wrap a {
@@ -213,4 +209,25 @@ header nav li:last-child {
   line-height: 30px;
   font-weight: normal;
   letter-spacing: 2px;
+}
+.contact {
+  line-height: 30px;
+}
+.contact span {
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: #555;
+}
+.contact ul {
+  padding-left: 40px;
+  margin: 16px 0;
+}
+.contact li .liTitle {
+  background-color: #555;
+  color: #fff;
+  padding: 0 10px;
+  letter-spacing: 0;
+}
+.contact li .liContent {
+  margin-left: 20px;
 }

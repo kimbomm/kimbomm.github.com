@@ -7,29 +7,24 @@ body {
 }
 /* line 4, assets\less\reset.less */
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 /* line 5, assets\less\reset.less */
-ul,
-ol {
-  list-style: none;
-}
-/* line 6, assets\less\reset.less */
 a {
   text-decoration: none;
   color: #000;
 }
-/* line 7, assets\less\reset.less */
+/* line 6, assets\less\reset.less */
 img {
   vertical-align: top;
 }
-/* line 8, assets\less\reset.less */
+/* line 7, assets\less\reset.less */
 i {
   text-indent: -9999px;
   font-style: italic;
 }
-/* line 9, assets\less\reset.less */
+/* line 8, assets\less\reset.less */
 button {
   text-indent: -9999px;
   background: none;
@@ -92,7 +87,7 @@ header nav li:last-child {
 .wrap p {
   letter-spacing: 2px;
   color: #555;
-  line-height: 1.6;
+  line-height: 30px;
 }
 /* line 9, assets\less\index.less */
 .wrap span,
@@ -267,4 +262,30 @@ header nav li:last-child {
   line-height: 30px;
   font-weight: normal;
   letter-spacing: 2px;
+}
+/* line 1, assets\less\contact.less */
+.contact {
+  line-height: 30px;
+}
+/* line 3, assets\less\contact.less */
+.contact span {
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: #555;
+}
+/* line 8, assets\less\contact.less */
+.contact ul {
+  padding-left: 40px;
+  margin: 16px 0;
+}
+/* line 13, assets\less\contact.less */
+.contact li .liTitle {
+  background-color: #555;
+  color: #fff;
+  padding: 0 10px;
+  letter-spacing: 0;
+}
+/* line 19, assets\less\contact.less */
+.contact li .liContent {
+  margin-left: 20px;
 }
