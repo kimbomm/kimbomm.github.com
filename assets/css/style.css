@@ -133,6 +133,7 @@ header nav li:hover a {
   max-width: 100%;
 }
 .work .wWrap {
+  vertical-align: top;
   display: inline-block;
   max-width: 340px;
   text-align: center;

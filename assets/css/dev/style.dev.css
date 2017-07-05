@@ -167,66 +167,67 @@ header nav li:hover a {
 }
 /* line 4, assets\less\work.less */
 .work .wWrap {
+  vertical-align: top;
   display: inline-block;
   max-width: 340px;
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 10, assets\less\work.less */
+/* line 11, assets\less\work.less */
 .work .wTitle {
   margin-bottom: 20px;
 }
-/* line 12, assets\less\work.less */
+/* line 13, assets\less\work.less */
 .work .wTitle span {
   font-size: 20px;
   padding: 0 10px;
   line-height: 30px;
   font-weight: lighter;
 }
-/* line 18, assets\less\work.less */
+/* line 19, assets\less\work.less */
 .work .wTitle .tk {
   background-color: #000;
   color: #fff;
 }
-/* line 22, assets\less\work.less */
+/* line 23, assets\less\work.less */
 .work .wTitle .league {
   background-color: #153871;
   color: #f5e04a;
 }
-/* line 26, assets\less\work.less */
+/* line 27, assets\less\work.less */
 .work .wTitle .portfolio {
   background-color: #83e6e8;
   color: #000;
 }
-/* line 31, assets\less\work.less */
+/* line 32, assets\less\work.less */
 .work .wInfo {
   padding: 10px;
   margin-bottom: 30px;
 }
-/* line 34, assets\less\work.less */
+/* line 35, assets\less\work.less */
 .work .wInfo span {
   line-height: 30px;
 }
-/* line 37, assets\less\work.less */
+/* line 38, assets\less\work.less */
 .work .wInfo .tC,
 .work .wInfo .uC {
   font-weight: normal;
   letter-spacing: 2px;
   text-transform: capitalize;
 }
-/* line 43, assets\less\work.less */
+/* line 44, assets\less\work.less */
 .work .wImage {
   margin-bottom: 30px;
 }
-/* line 45, assets\less\work.less */
+/* line 46, assets\less\work.less */
 .work .wImage img {
   height: 200px;
 }
-/* line 49, assets\less\work.less */
+/* line 50, assets\less\work.less */
 .work .wComment {
   padding: 10px;
 }
-/* line 51, assets\less\work.less */
+/* line 52, assets\less\work.less */
 .work .wComment span {
   line-height: 30px;
   font-weight: normal;
