@@ -73,6 +73,7 @@ header nav li:hover a {
   margin: 20px auto 0;
 }
 .wrap p {
+  padding: 10px;
   letter-spacing: 2px;
   color: #555;
   line-height: 30px;

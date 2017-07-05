@@ -90,72 +90,73 @@ header nav li:hover a {
 }
 /* line 4, assets\less\index.less */
 .wrap p {
+  padding: 10px;
   letter-spacing: 2px;
   color: #555;
   line-height: 30px;
 }
-/* line 9, assets\less\index.less */
+/* line 10, assets\less\index.less */
 .wrap span,
 .wrap a {
   font-weight: bold;
 }
-/* line 12, assets\less\index.less */
+/* line 13, assets\less\index.less */
 .wrap a {
   padding: 1px;
 }
-/* line 15, assets\less\index.less */
+/* line 16, assets\less\index.less */
 .wrap .eCtr {
   color: #00aaaa;
 }
-/* line 18, assets\less\index.less */
+/* line 19, assets\less\index.less */
 .wrap .sCond {
   color: #800000;
 }
-/* line 21, assets\less\index.less */
+/* line 22, assets\less\index.less */
 .wrap .cLang {
   color: #ff1868;
 }
-/* line 24, assets\less\index.less */
+/* line 25, assets\less\index.less */
 .wrap .wPub {
   color: #ff8040;
 }
-/* line 27, assets\less\index.less */
+/* line 28, assets\less\index.less */
 .wrap .fEnd {
   color: #808000;
 }
-/* line 30, assets\less\index.less */
+/* line 31, assets\less\index.less */
 .wrap .pFolio {
   background-color: #ff0080;
   color: #fff;
   transition: 0.5s;
 }
-/* line 34, assets\less\index.less */
+/* line 35, assets\less\index.less */
 .wrap .pFolio:hover {
   background-color: #ff4da6;
 }
-/* line 38, assets\less\index.less */
+/* line 39, assets\less\index.less */
 .wrap .html {
   color: #e54f27;
 }
-/* line 41, assets\less\index.less */
+/* line 42, assets\less\index.less */
 .wrap .css {
   color: #2177ff;
 }
-/* line 44, assets\less\index.less */
+/* line 45, assets\less\index.less */
 .wrap .js {
   color: #a79303;
 }
-/* line 47, assets\less\index.less */
+/* line 48, assets\less\index.less */
 .wrap .git {
   background-color: #000;
   color: #fff;
   transition: 0.5s;
 }
-/* line 51, assets\less\index.less */
+/* line 52, assets\less\index.less */
 .wrap .git:hover {
   background-color: #262626;
 }
-/* line 55, assets\less\index.less */
+/* line 56, assets\less\index.less */
 .wrap .rNow {
   color: #ff2020;
   text-transform: uppercase;
