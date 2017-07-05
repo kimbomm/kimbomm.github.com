@@ -24,7 +24,7 @@ button {
   background: none;
 }
 header {
-  width: 740px;
+  max-width: 740px;
   margin: 0 auto;
   text-align: center;
 }
@@ -69,7 +69,7 @@ header nav li:hover a {
   color: #0099ff;
 }
 .wrap {
-  width: 740px;
+  max-width: 740px;
   margin: 20px auto 0;
 }
 .wrap p {
@@ -128,43 +128,15 @@ header nav li:hover a {
   color: #ff2020;
   text-transform: uppercase;
 }
-.wrap .officer {
-  color: #004000;
-}
-.wrap .spain {
-  color: #f00;
-}
-.wrap .barcelona {
-  background-color: #a40344;
-  color: #fff;
-  transition: 0.5s;
-}
-.wrap .barcelona:hover {
-  background-color: #ef0463;
-}
-.wrap .valencia {
-  background-color: #fa5619;
-  color: #fff;
-  transition: 0.5s;
-}
-.wrap .valencia:hover {
-  background-color: #fc8d64;
-}
-.wrap .madrid {
-  background-color: #272d61;
-  color: #fff;
-  transition: 0.5s;
-}
-.wrap .madrid:hover {
-  background-color: #3d4698;
-}
-.wrap .arsenal {
-  color: #db0007;
+.work {
+  text-align: center;
+  max-width: 100%;
 }
 .work .wWrap {
-  width: 50%;
+  display: inline-block;
+  max-width: 340px;
   text-align: center;
-  float: left;
+  margin-bottom: 20px;
 }
 .work .wTitle {
   margin-bottom: 20px;
@@ -213,6 +185,24 @@ header nav li:hover a {
   line-height: 30px;
   font-weight: normal;
   letter-spacing: 2px;
+}
+.about .officer {
+  color: #004000;
+}
+.about .spain {
+  color: #f00;
+}
+.about .barcelona {
+  color: #a40344;
+}
+.about .valencia {
+  color: #fa5619;
+}
+.about .madrid {
+  color: #272d61;
+}
+.about .arsenal {
+  color: #db0007;
 }
 .contact {
   line-height: 30px;
